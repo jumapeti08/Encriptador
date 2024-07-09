@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.pantalla {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 5px;
+}
+
+.seccionEntrada {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    padding: 2.5rem 0rem 0rem 3.125rem;
+}
+
+.entrada {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 38.125rem;
+    height: 31.25rem;
+    padding: 9.375rem 9.375rem 1.25rem 6.25rem;
+}
+
+.textoEntrada {
+    font-family: "Inter", sans-serif;
+    font-size: 2rem;
+    color: #0A3871;
+    width: 38.125rem;
+    height: 31.25rem;
+    padding: 0.3125rem;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    border: none;
+    /* Para compatibilidad con navegadores antiguos */
+    resize: none;
+    /* Evita que el usuario cambie el tamaño del textarea */
+    line-height: 1.2;
+}
+
+.avisoAlerta {
+    display: flex;
+    flex-direction: row;
+    padding: 1.25rem 0rem 1rem 0rem;
+}
+
+.mensajeAlerta {
+    font-family: "Inter", sans-serif;
+    font-size: 0.75rem;
+    color: #495057;
+    padding: 0rem 0rem 0rem 0.625rem;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+}
+
+.botonUno {
+    color: #FFFFFF;
+    font-family: "Inter", sans-serif;
+    font-size: rempx;
+    background-color: hsl(213, 84%, 24%);
+    border-radius: 1.5rem;
+    width: 18rem;
+    height: 4rem;
+    margin: 0rem 1.25rem 0rem 0rem;
+}
+
+.botonDos {
+    color: #0A3871;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    width: 18rem;
+    height: 4rem;
+    background-color: #D8DFE8;
+    border-radius: 1.5rem;
+}
+
+.respuesta {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    border-radius: 2rem;
+    margin: 2.5rem 2.5rem 0rem 0rem;
+    background-color: beige;
+    padding: 4rem;
+    min-width: 20rem;
+}
+
+.respuestaTexto {
+    max-width: 18rem;
+}
+
+.botonTres {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    width: 100%;
+    margin-top: 100px;
+    /* Ajusta el margen superior según sea necesario */
+    height: 4rem;
+    border-radius: 1.5rem;
+    position: absolute;
+    bottom: 4rem;
+    /* Posición desde abajo */
+    max-width: 20rem;
+}
+
+@media (max-width: 1200px) {
+
+    .logo {
+        align-self: flex-start;
+        padding: 2.5rem 0rem 0rem 1rem;
+    }
+
+    .muñeco {
+        display: none;
+    }
+
+    .seccionEntrada {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .entrada {
+        width: 100%;
+        padding: 2rem;
+        align-items: center;
+    }
+
+    .textoEntrada {
+        width: 90%;
+    }
+
+    .botones {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .botonUno,
+    .botonDos {
+        width: 45%;
+    }
+
+    .respuesta {
+        width: 70%;
+        text-align: center;
+    }
+}
+
+@media(max-width:1000px) {
+    .botones {
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+}

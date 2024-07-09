@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css"> <!-- Enlace al archivo CSS -->
+    <style>
+        #miBoton {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="pantalla">
+        <section class="seccionEntrada">
+            <div class="logo">
+                <img src="./assets/Logo.png" alt="Logo de Alura">
+            </div>
+            <div class="entrada">
+                <textarea class="textoEntrada" id="texto">Ingrese el texto aquí</textarea>
+                <div class="avisoAlerta">
+                    <img src="./assets/Group.png" alt="Alerta">
+                    <p class="mensajeAlerta">Solo letras minusculas y sin acento.</p>
+                </div>
+                <div class="botones">
+                    <button onclick="encriptar('parrafo','titulo')" class="botonUno">Encriptar</button>
+                    <button class="botonDos">Desencriptar</button>
+                </div>
+
+            </div>
+            <div class="respuesta">
+                <img id="imagen" class="muñeco" src="./assets/Muñeco.png" alt="Muñeco">
+                <h1 id="titulo">Ningún mensaje fue encontrado</h1>
+                <p class="respuestTexto" id="parrafo">Ingresa el texto que desees Encriptar o Desencriptar</p>
+                <button id="miBoton" class="botonTres">Copiar</button>
+            </div>
+        </section>
+        <script src="script.js"></script>
+    </main>
+</body>
+
+</html>
